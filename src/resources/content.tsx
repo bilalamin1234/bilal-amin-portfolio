@@ -2,14 +2,14 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  firstName: "Bilal",
+  lastName: "Amin",
+  name: `Bilal Amin`,
+  role: "Web Developer",
+  avatar: "/images/profile-pic.jpeg",
+  email: "bilalaminrizwan3@gmail.com",
+  location: "Asia/Kolkata", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English"], // optional: Leave the array empty if you don't want to display languages
   locale: "en", // BCP 47 language tag for the HTML lang attribute, e.g., 'en', 'ja', 'zh-TW'
 };
 
@@ -26,7 +26,7 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/bilalamin1234",
     essential: true,
   },
   {
@@ -38,13 +38,13 @@ const social: Social = [
   {
     name: "Instagram",
     icon: "instagram",
-    link: "https://www.instagram.com/once_ui/",
+    link: "https://www.instagram.com/bilal_.amin/",
     essential: false,
   },
   {
     name: "Threads",
     icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.threads.com/@bilal_.amin",
     essential: true,
   },
   {
@@ -60,26 +60,26 @@ const home: Home = {
   image: "/images/og/home.jpg",
   label: "Home",
   title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  description: `I'm a ${person.role} who builds clean, modern, and functional web experiences.`,
+  headline: <>Turning ideas into modern web experiences</>,
   featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
+        <strong className="ml-4">Featured</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
           Featured work
         </Text>
       </Row>
     ),
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/work",
   },
   subline: (
     <>
-      I'm {person.firstName}, a {person.role.toLowerCase()} at{" "}
-      <Text as="span" size="xl" weight="strong">ONCE UI</Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
-    </>
+      I'm {person.firstName}, a {person.role.toLowerCase()} focused on{" "}
+      <Text as="span" size="xl" weight="strong">building modern websites</Text>,
+      where I turn ideas into clean, modern, and functional experiences. </>
   ),
 };
 
@@ -96,139 +96,247 @@ const about: About = {
     display: true,
   },
   calendar: {
-    display: true,
-    link: "https://cal.com",
+    display: false,
+    link: "",
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        {person.firstName} is a {person.location.split("/")[1]?.replace("_", " ")}-based {person.role.toLowerCase()} with a passion for transforming complex challenges
-        into simple, elegant design solutions. Their work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        I'm {person.firstName}, a {person.role.toLowerCase()} focused on building
+        modern, responsive, and visually engaging websites. I enjoy turning ideas
+        into clean digital experiences that are simple to use, purposeful, and
+        designed around the needs of the audience.
+        <br />
+        <br />
+        Alongside web development, I work with SEO and AEO to help websites become
+        more discoverable across search engines and modern AI-powered search
+        experiences. I'm also interested in digital marketing and use AI tools to
+        improve research, content workflows, development, and creative processes.
+        <br />
+        <br />
+        My approach combines design, development, marketing, and technology to
+        create digital experiences that not only look good, but are built with
+        visibility, usability, and growth in mind.
       </>
     ),
   },
   work: {
-    display: true, // set to false to hide this section
-    title: "Work Experience",
+    display: true,
+    title: "Projects",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "R-KLAN",
+        timeframe: "2026",
+        role: "Web Design & Development",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Designed and developed an aviation-focused website built around the
+            R-KLAN identity, combining immersive visuals with a modern interface.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Focused on responsive layouts, visual hierarchy, navigation, and a
+            strong aviation-inspired digital experience.
           </>,
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            src: "/images/projects/project-01/cover-01.png",
+            alt: "R-KLAN aviation website",
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Yumna Collection",
+        timeframe: "2026",
+        role: "Web Design & Development",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Designed and developed a modern fashion e-commerce experience focused
+            on elegant presentation and an intuitive shopping interface.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Created a responsive layout with clean product presentation,
+            structured sections, and a refined visual style.
           </>,
         ],
-        images: [],
+        images: [
+          {
+            src: "/images/projects/project-01/cover-02.png",
+            alt: "Yumna Collection fashion website",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
-    title: "Studies",
+    display: true,
+    title: "Learning & Growth",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Web Development",
+        description: (
+          <>
+            Continuously developing my skills through hands-on projects,
+            experimentation, and practical experience with modern web
+            technologies.
+          </>
+        ),
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "SEO, AEO & Digital Marketing",
+        description: (
+          <>
+            Exploring search engine optimization, answer engine optimization,
+            content strategy, and digital marketing to help businesses improve
+            their online visibility.
+          </>
+        ),
+      },
+      {
+        name: "AI & Emerging Technologies",
+        description: (
+          <>
+            Using AI tools for research, content creation, development,
+            brainstorming, productivity, and improving creative workflows.
+          </>
+        ),
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
+    display: true,
+    title: "Skills & Expertise",
     skills: [
       {
-        title: "Figma",
+        title: "Web Development",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>
+            Building modern, responsive websites with clean interfaces,
+            intuitive navigation, and a strong focus on usability.
+          </>
         ),
         tags: [
           {
-            name: "Figma",
-            icon: "figma",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "HTML",
+            icon: "html",
           },
           {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "CSS",
+            icon: "css",
           },
-        ],
-      },
-      {
-        title: "Next.js",
-        description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
-        ),
-        tags: [
           {
             name: "JavaScript",
             icon: "javascript",
           },
           {
+            name: "React",
+            icon: "react",
+          },
+          {
             name: "Next.js",
             icon: "nextjs",
           },
+        ],
+        images: [],
+      },
+      {
+        title: "SEO & AEO",
+        description: (
+          <>
+            Helping websites improve their visibility through search engine
+            optimization and answer engine optimization, with a focus on
+            discoverability, useful content, and search intent.
+          </>
+        ),
+        tags: [
           {
-            name: "Supabase",
-            icon: "supabase",
+            name: "SEO",
+            icon: "search",
+          },
+          {
+            name: "AEO",
+            icon: "sparkles",
+          },
+          {
+            name: "Content Strategy",
+            icon: "document",
           },
         ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
+        images: [],
+      },
+      {
+        title: "Digital Marketing",
+        description: (
+          <>
+            Interested in using digital marketing strategies to build online
+            presence, reach the right audience, and support business growth.
+          </>
+        ),
+        tags: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "Digital Marketing",
+            icon: "globe",
+          },
+          {
+            name: "Content",
+            icon: "document",
+          },
+          {
+            name: "Strategy",
+            icon: "target",
           },
         ],
+        images: [],
+      },
+      {
+        title: "AI Tools",
+        description: (
+          <>
+            Using AI tools to accelerate research, development, content
+            workflows, ideation, automation, and creative problem solving.
+          </>
+        ),
+        tags: [
+          {
+            name: "AI Tools",
+            icon: "sparkles",
+          },
+          {
+            name: "AI-Assisted Development",
+            icon: "code",
+          },
+          {
+            name: "Automation",
+            icon: "bolt",
+          },
+        ],
+        images: [],
+      },
+      {
+        title: "UI & User Experience",
+        description: (
+          <>
+            Creating clean visual layouts with attention to typography,
+            spacing, imagery, visual hierarchy, and responsive behavior.
+          </>
+        ),
+        tags: [
+          {
+            name: "UI Design",
+            icon: "figma",
+          },
+          {
+            name: "Responsive Design",
+            icon: "layout",
+          },
+        ],
+        images: [],
       },
     ],
   },
@@ -237,8 +345,8 @@ const about: About = {
 const blog: Blog = {
   path: "/blog",
   label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
+  title: "Insights on web, SEO, AEO & AI...",
+  description: `Thoughts, insights, and practical ideas from ${person.name} on web development, SEO, AEO, digital marketing, and AI.`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
 };
@@ -247,7 +355,7 @@ const work: Work = {
   path: "/work",
   label: "Work",
   title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
+  description: `Design and development projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes
 };
@@ -255,50 +363,18 @@ const work: Work = {
 const gallery: Gallery = {
   path: "/gallery",
   label: "Gallery",
-  title: `Photo gallery – ${person.name}`,
-  description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
-  // These are placeholder images, replace with your own
+  title: `Visual work – ${person.name}`,
+  description: `A visual showcase of ${person.name}'s web design and development projects.`,
   images: [
     {
-      src: "/images/gallery/horizontal-1.jpg",
-      alt: "image",
+      src: "/images/projects/project-01/cover-01.png",
+      alt: "R-KLAN aviation website",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/vertical-4.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
+      src: "/images/projects/project-01/cover-02.png",
+      alt: "Yumna Collection fashion website",
       orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-1.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-2.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/horizontal-2.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-4.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-3.jpg",
-      alt: "image",
-      orientation: "vertical",
     },
   ],
 };
