@@ -14,7 +14,7 @@ import {
 import { home, person, social } from "./content";
 
 // IMPORTANT: Replace with your own domain address - it's used for SEO in meta tags and schema
-const baseURL: string = "http://localhost:3000";
+const baseURL: string = "https://bilal-amin-portfolio-beta.vercel.app";
 
 const routes: RoutesConfig = {
   "/": true,
