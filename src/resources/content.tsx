@@ -59,8 +59,9 @@ const home: Home = {
   path: "/",
   image: "/images/og/home.jpg",
   label: "Home",
-  title: `${person.name}'s Portfolio`,
-  description: `I'm a ${person.role} who builds clean, modern, and functional web experiences.`,
+  title: "Bilal Amin | Web Developer & Digital Creator",
+  description:
+    "Bilal Amin is a web developer focused on building modern, responsive, and functional websites with clean design, SEO, AEO, and AI-powered solutions.",
   headline: <>Turning ideas into modern web experiences</>,
   featured: {
     display: true,
@@ -78,8 +79,11 @@ const home: Home = {
   subline: (
     <>
       I'm {person.firstName}, a {person.role.toLowerCase()} focused on{" "}
-      <Text as="span" size="xl" weight="strong">building modern websites</Text>,
-      where I turn ideas into clean, modern, and functional experiences. </>
+      <Text as="span" size="xl" weight="strong">
+        building modern websites
+      </Text>
+      , where I turn ideas into clean, modern, and functional experiences.
+    </>
   ),
 };
 
